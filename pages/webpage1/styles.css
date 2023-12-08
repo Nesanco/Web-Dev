@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 15px;
+    letter-spacing: 0.1rem;
+}
+
+.header-container {
+    height: 250px;
+    background-image: url("https://media.istockphoto.com/id/1443557852/vector/abstract-landscape-with-mountains-and-forest.jpg?s=612x612&w=0&k=20&c=EBvT7xSdqRv7I0vFsFTLEdnpWDO_v_E7S1UiF42h7qQ=");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+.header-container h1 {
+    font-family: 'Mukta', sans-serif;
+    font-weight: 300;
+    font-size: 3.5rem;
+    color: white;
+}
+
+.navbar-container {
+    height: 100px;
+    background-color: #2d353d;
+}
+
+.navbar-elements {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+}
+
+.navbar-elements a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+
+.navbar-elements a:hover {
+    color: #c9b21c;
+}
+
+.content-container {
+    height: 460px;
+    display: flex;
+}
+
+.left-container {
+    width: 70%;
+    height: 460px;
+    position: relative;
+}
+
+.left-container h2 {
+    padding: 30px;
+    padding-bottom: 0;
+
+    color: black;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 300;
+    font-size: 2.1rem;
+}
+
+.left-container img {
+    height: 350px;
+    width: 450px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 30px;
+
+}
+
+.left-container p {
+    padding: 30px;
+    padding-top: 0;
+    padding-bottom: 20px;
+    padding-right: 520px;
+    flex-wrap: wrap;
+
+    color: black;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 200;
+    font-size: 0.8rem;
+}
+
+.right-container {
+    width: 30%;
+    height: 460px;
+    border-left: 3px solid gray;
+}
+
+.right-container h3 {
+    padding: 30px;
+    padding-bottom: 2px;
+    color: black;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 300;
+    font-size: 2.1rem;
+}
+
+.right-container ul {
+    padding: 55px;
+    padding-top: 1px;
+}
+
+.right-container li {
+    color: black;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 200;
+    font-size: 1.0rem;
+}
+
+.footer-container {
+    height: 90px;
+    background-color: #2d353d;
+}
+
+.footer-elements {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90px;
+}
+
+.footer-elements a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 300;
+    font-size: 1.0rem;
+}
+
+.footer-elements a:hover {
+    color: #c9b21c;
+}
+
+.footer-container p {
+    text-decoration: none;
+    color: gray;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 300;
+    font-size: 1.0rem;
+}

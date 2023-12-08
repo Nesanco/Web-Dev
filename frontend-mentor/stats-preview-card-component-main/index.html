@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: hsl(233, 47%, 7%);
+      font-size: 15px;
+    }
+
+    .container {
+      width: 100%;
+      height: 900px;
+    }
+
+    .card {
+      width: 90%;
+      height: 780px;
+      margin: auto;
+      margin-top: 30px;
+    }
+
+    .card {
+      border-radius: 10px;
+      background-color: hsl(244, 38%, 16%);
+    }
+
+    .color {
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-color: hsla(277, 64%, 61%, 50%);
+      z-index: 5;
+    }
+
+    .image {
+      position: relative;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      overflow: hidden;
+      width: 100%;
+      height: 180px;
+    }
+
+    .header-image {
+      width: 100%;
+      height: 180px;
+    }
+
+    .content h1 {
+      text-align: center;
+      font-size: 1.8rem;
+      padding-left: 14px;
+      padding-right: 14px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      color: hsl(0, 0%, 100%);
+      margin-top: 35px;
+    }
+
+    .content span {
+      font-size: 1.8rem;
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      color: hsl(277, 64%, 61%);
+    }
+
+    .content p {
+      color: hsla(0, 0%, 100%, 0.75);
+      text-align: center;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-family: 'Lexend Deca', sans-serif;
+      font-weight: 400;
+      line-height: 1.5rem;
+    }
+
+    .stats {
+      padding-top: 6px;
+    }
+
+    .stats h3 {
+      text-align: center;
+      color: hsl(0, 0%, 100%);
+      font-size: 1.4rem;
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      margin-bottom: 10px;
+      margin-top: 30px;
+    }
+
+    .stats p {
+      font-family: 'Lexend Deca', sans-serif;
+      font-weight: 400;
+      color: hsla(0, 0%, 100%, 0.6);
+      font-size: 0.8rem;
+      word-spacing: 0.3rem;
+      padding: 0;
+      margin: 0;
+    }
+
+    @media screen and (min-width: 1300px) {
+      .card {
+        width: 79%;
+        height: 450px;
+        margin: auto;
+        margin-top: 160px;
+      }
+
+      .header-image {
+        background: url("images/image-header-desktop.jpg") no-repeat;
+        height: 450px;
+      }
+
+      .content {
+        float: left;
+        height: 480px;
+        width: 45%;
+      }
+
+      .content h1 {
+        text-align: left;
+        padding-top: 60px;
+        margin: 0;
+        margin-left: 80px;
+        margin-right: 80px;
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .content p {
+        padding-top: 30px;
+        text-align: left;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0;
+        margin-left: 80px;
+        margin-right: 80px;
+      }
+
+      .stats {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0;
+        padding: 0;
+        width: 500px;
+        padding-top: 40px;
+      }
+
+      .stats p {
+        margin: 0;
+        padding: 0;
+      }
+
+      .color {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: hsla(277, 64%, 61%, 50%);
+        z-index: 5;
+      }
+
+      .image {
+        position: relative;
+        float: right;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 10px;
+        overflow: hidden;
+        width: 55%;
+        height: 450px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="card">
+
+    <!-- font-family: 'Inter', sans-serif;
+    font-family: 'Lexend Deca', sans-serif; -->
+
+    <div class="image">
+      <div class="color">
+
+      </div>
+      <img src="images/image-header-mobile.jpg" alt="Header Image" class="header-image">
+    </div>
+    <div class="content">
+      <h1>Get <span>insights</span> that help your business grow.</h1>
+      <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
+
+      <div class="stats">
+        <div class="companies">
+          <h3>10k+</h3>
+          <p>COMPANIES</p>
+        </div>
+
+        <div class="templates">
+          <h3>314</h3>
+          <p>TEMPLATES</p>
+        </div>
+
+        <div class="queries">
+          <h3>12M+</h3>
+          <p>QUERIES</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

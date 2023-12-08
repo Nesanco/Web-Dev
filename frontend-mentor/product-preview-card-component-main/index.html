@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <style>
+    body {
+      font-size: 14px;
+      padding: 0;
+      margin: 0;
+
+      background-color: hsl(30, 38%, 92%);
+    }
+
+    .image-container {
+      background: url("images/image-product-mobile.jpg") no-repeat;
+      height: 200px;
+      background-size: cover;
+      width: 90%;
+      margin-left: 5%;
+      margin-top: 5%;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    .content-container {
+      background-color: hsl(0, 0%, 100%);
+      width: 90%;
+      margin-left: 5%;
+      height: 390px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+
+    h4 {
+      margin: 0;
+      padding: 30px;
+      color: hsl(228, 12%, 48%);
+      /* font-family: 'Fraunces', serif; */
+      font-family: 'Montserrat', sans-serif;
+      letter-spacing: 0.3rem;
+      font-weight: 700;
+      padding-bottom: 0;
+    }
+
+    h2 {
+      padding: 30px;
+      margin: 0;
+      padding-top: 15px;
+      font-size: 2rem;
+      font-family: 'Fraunces', serif;
+      font-weight: 700;
+      padding-bottom: 0;
+    }
+
+    p {
+      padding: 30px;
+      margin: 0;
+      padding-top: 15px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      color: hsl(228, 12%, 48%);
+      font-size: 1.0rem;
+      padding-bottom: 10px;
+    }
+
+    h3 {
+      padding: 30px;
+      margin: 0;
+      padding-top: 15px;
+      color: hsl(158, 36%, 37%);
+      font-family: 'Fraunces', serif;
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+
+    span {
+      color: hsl(228, 12%, 48%);
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+      font-size: 0.9rem;
+      padding-left: 15px;
+      text-decoration: line-through;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 1.0rem;
+      margin-left: 30px;
+      margin-right: 30px;
+      background-color:  hsl(158, 36%, 37%);
+      display: block;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-radius: 10px;
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    a img {
+      margin-right: 10px;
+    }
+
+    a:hover {
+      background-color: hsl(212, 21%, 14%);
+    }
+
+    @media screen and (min-width: 800px) {
+      .container {
+        display: flex;
+        margin-left: 550px;
+        margin-top: 180px;
+      }
+      .image-container {
+        background: url("images/image-product-desktop.jpg") no-repeat;
+        height: 450px;
+        width: 300px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+        background-size: cover;
+        margin: 0;
+      }
+      
+      .content-container {
+        width: 300px;
+        margin: 0;
+        height: 450px;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="image-container"></div>
+
+  <div class="content-container">
+    <h4>PERFUME</h4>
+    <h2>Gabrielle Essence Eau De Parfum</h2>
+    <p>A floral, solar and voluptuous interpretation composed by Oliver Polge, Perfumer-Creator for the House of CHANEL.</p>
+    <h3>$149.99<span>$169.99</span></h3>
+    <a href="#"><img src="images/icon-cart.svg" alt="Cart">Add to Cart</a>
+  </div>
+</div>
+</body>
+</html>

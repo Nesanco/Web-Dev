@@ -1,0 +1,271 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    letter-spacing: 0.1rem;
+}
+
+.navbar-container {
+    background-color: #2d353d;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar-container a {
+    padding: 20px;
+    text-decoration: none;
+    color: #ced3db;
+    font-weight: 300;
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: 0.1rem;
+    font-size: 1.5rem;
+}
+
+.navbar-container a:hover {
+    color: wheat;
+}
+
+.description-container {
+    display: flex;
+}
+
+.description-container h1 {
+    color: white;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 600;
+    font-size: 2.3rem;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.description-container p {
+    font-family: 'Mukta', sans-serif;
+    color: white;
+    font-weight: 100;
+    font-size: 1.2rem;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.text-container {
+    width: 50%;
+    background-color: rgb(57, 66, 74);
+    height: 500px;
+}
+
+.slideshow-container {
+    width: 50%;
+    height: 500px;
+    background: no-repeat url("https://1000logos.net/wp-content/uploads/2020/09/Java-Logo.png");
+    background-size: cover;
+}
+
+.favorite-header-container {
+    background-color: #2d353d;
+}
+
+.favorite-header-container h2 {
+    margin: 0;
+    text-align: center;
+    padding: 30px;
+    font-family: 'Roboto Slab', serif;
+    color: #a8aaad;
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+.favorite-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    background: url("images/line.png") no-repeat;
+    background-size: cover;
+}
+
+.favorite {
+    background-color: rgb(57, 66, 74);
+    height: 400px;
+    width: 500px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.favorite h2 {
+    font-family: 'Mukta', sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: 1.8rem;
+    padding-left: 30px;
+}
+
+.favorite p {
+    padding-left: 30px;
+    padding-right: 40px;
+    font-family: 'Mukta', sans-serif;
+    color: white;
+    font-weight: 200;
+    font-size: 0.9rem;
+}
+
+.favorite img {
+    width: 430px;
+    height: 130px;
+}
+
+.favorite-image {
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.favorite-image img {
+    border-radius: 20px;
+}
+
+.timeline-header-container {
+    background-color: #2d353d;
+}
+
+.timeline-header-container h2 {
+    margin: 0;
+    text-align: center;
+    padding: 30px;
+    font-family: 'Roboto Slab', serif;
+    color: #a8aaad;
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+.timeline-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    background: url("images/reviews-background.png") no-repeat;
+    background-size: cover;
+}
+
+.timeline {
+    background-color: rgb(57, 66, 74);
+    height: 260px;
+    width: 800px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.content-container {
+    display: flex;
+    height: 260px;
+}
+
+.content-container img {
+    width: 50%;
+    height: 260px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.text {
+    width: 50%;
+}
+
+.text p {
+    font-family: 'Mukta', sans-serif;
+    color: white;
+    font-weight: 200;
+    font-size: 1.0rem;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+.text h3 {
+    font-family: 'Mukta', sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 1.7rem;
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.footer-container {
+    background-color: #2d353d;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-container a {
+    padding: 20px;
+    text-decoration: none;
+    color: #ced3db;
+    font-weight: 300;
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem;
+}
+
+.footer-container a:hover {
+    color: wheat;
+}
+
+@media screen and (min-width: 500px) {
+    .favorite-container {
+        flex-wrap: wrap;
+    }
+
+    .favorite {
+        height: 500px;
+        width: 400px;
+    }
+
+    .favorite h2 {
+        font-size: 2.0rem;
+    }
+
+    .favorite p {
+        font-size: 1.3rem;
+    }
+
+    .favorite img {
+        width: 330px;
+        height: 130px;
+    }
+
+    .favorite-header-container h2 {
+        font-size: 3.0rem;
+    }
+
+    .timeline {
+        height: 300px;
+        width: 900px;
+    }
+
+    .content-container img {
+        height: 300px;
+    }
+
+    .text p {
+        font-size: 1.4rem;
+    }
+
+    .text h3 {
+        font-size: 2.3rem;
+    }
+
+    .navbar-container a {
+        font-size: 2.3rem;
+    }
+
+    .description-container h1 {
+        font-size: 2.9rem;
+    }
+
+    .description-container p {
+        font-size: 1.3rem;
+    }
+}

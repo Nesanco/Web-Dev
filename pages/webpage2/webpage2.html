@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400&display=swap" rel="stylesheet">
+</head>
+<body onload="initializeSlideshow()">
+
+<div class="container">
+    <div class="navbar-container" id="slideshow">
+        <a href="#slideshow">Slideshow</a>
+        <a href="#favorites">Favorites</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#footer">Footer</a>
+    </div>
+
+    <div class="description-container">
+        <div class="text-container">
+            <h1 id="slideshow-header">Java</h1>
+            <p id="slideshow-text">I know how to code using Java, I learnt myself a few years ago</p>
+        </div>
+
+        <div class="slideshow-container" id="slideshow-image"></div>
+    </div>
+
+    <div class="favorite-header-container" id="favorites">
+        <h2>Favorite Things</h2>
+    </div>
+
+    <div class="favorite-container">
+        <div class="favorite">
+            <h2>Lionel Messi</h2>
+            <p>Lionel Messi is a good soccer player and fun to watch, watching his games helps learn new skills and makes the game enjoyable to watch</p>
+            <div class="favorite-image">
+                <img src="https://m.media-amazon.com/images/I/71tvFS9quRL.jpg" alt="Image">
+            </div>
+        </div>
+
+        <div class="favorite">
+            <h2>Slovenia</h2>
+            <p>Slovenia is a cool country with many things to see. It isn't very touristy which makes it more enjoyable, it is rare to find a line for something</p>
+            <div class="favorite-image">
+                <img src="images/sloveni.jpg" alt="Image">
+            </div>
+        </div>
+
+        <div class="favorite">
+            <h2>Soccer</h2>
+            <p>Soccer is a fun sport that I've been playing for a few years. I don't play competitively, just for fun as any position. I also like watching Manchester United play</p>
+            <div class="favorite-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS9cnGAh7y7uDSpb8LsXt5Mtl0m3SrKbgWeM7Ty--qZJ6pbg3oMH1t_A0_ehnvXXkzPpc&usqp=CAU" alt="Image">
+            </div>
+        </div>
+    </div>
+
+    <div class="timeline-header-container" id="timeline">
+        <h2>Timeline</h2>
+    </div>
+
+    <div class="timeline-container">
+        <div class="timeline">
+            <div class="content-container">
+                <div class="text">
+                    <h3>December 2011</h3>
+                    <p>I first went on a plane to England, since then I've been many times</p>
+                </div>
+                <img src="images/london.jpg" alt="Image">
+            </div>
+        </div>
+
+        <div class="timeline">
+            <div class="content-container">
+                <div class="text">
+                    <h3>August 2012</h3>
+                    <p>I started my first year of Canterbury when I was 4 in Pre-K 4</p>
+                </div>
+                <img src="https://bbk12e1-cdn.myschoolcdn.com/931/photo/orig_photo500122_5258036.jpg?w=1920" alt="Image">
+            </div>
+        </div>
+
+        <div class="timeline">
+            <div class="content-container">
+                <div class="text">
+                    <h3>August 2015</h3>
+                    <p>I saw the first soccer match of Manchester United when I was 7 in Manchester</p>
+                </div>
+                <img src="https://raysparta6.files.wordpress.com/2013/11/old-trafford-wallpaper-2012-2013-stretford-end4.jpg" alt="Image">
+            </div>
+        </div>
+
+        <div class="timeline">
+            <div class="content-container">
+                <div class="text">
+                    <h3>April 2008</h3>
+                    <p>I was born in Fort Myers Florida at Health Park</p>
+                </div>
+                <img src="https://www.leehealth.org/getmedia/ea879cf5-aaab-4bda-9bb2-cf11d57ec26a/healthpark_banner_bg.jpg?width=1440&height=680&ext=.jpg" alt="Image">
+            </div>
+        </div>
+
+        <div class="timeline">
+            <div class="content-container">
+                <div class="text">
+                    <h3>August 2022</h3>
+                    <p>I started the first year of high school at Canterbury</p>
+                </div>
+                <img src="https://images.squarespace-cdn.com/content/v1/57645d47725e25704d6f4754/1466197536380-6V9C08NURTB8WA463R00/02.jpg?format=2500w" alt="Image">
+            </div>
+        </div>
+
+        <div class="timeline">
+            <div class="content-container">
+                <div class="text">
+                    <h3>June 2023</h3>
+                    <p>I went on my favorite holiday to Greece, Turkey, Italy, and Slovenia</p>
+                </div>
+                <img src="images/towel.jpg" alt="Image">
+            </div>
+        </div>
+
+        <div class="timeline">
+            <div class="content-container">
+                <div class="text">
+                    <h3>August 2021</h3>
+                    <p>I started to learn coding on my own because I was bored (Java/c#)</p>
+                </div>
+                <img src="https://wolfcareers.com/wp-content/uploads/2022/09/MicrosoftTeams-image-33.jpg" alt="Image">
+            </div>
+        </div>
+
+        <div class="timeline">
+            <div class="content-container">
+                <div class="text">
+                    <h3>August 2022</h3>
+                    <p>I took my first AP Class, AP Computer Science Principles</p>
+                </div>
+                <img src="https://d5i19g0fn6omf.cloudfront.net/uploads/catalog/ap/apcspcore.png?v=yyv" alt="Image">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-container" id="footer">
+        <a href="#slideshow">Slideshow</a>
+        <a href="#favorites">Favorites</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#footer">Footer</a>
+    </div>
+</div>
+
+</body>
+</html>

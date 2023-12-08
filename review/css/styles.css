@@ -1,0 +1,26 @@
+h1 {
+    font-family: Impact, serif;
+    font-size: 48pt;
+    text-align: center;
+    color: blue;
+}
+
+img {
+    padding-left: 45%;
+    height: 200px;
+    width: 200px;
+}
+
+blockquote {
+    padding: 30px 30px 30px 30px;
+    background-color: gray;
+    color: yellow;
+    font-family: Algerian, serif;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    background: orangered;
+    margin: 15px auto;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Profile card component</title>
+
+  <style>
+    body {
+      background-color: hsl(185, 75%, 39%);
+    }
+
+    .container {
+      height: 700px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 30px;
+      height: 500px;
+      width: 400px;
+      position: relative;
+      top: 130px;
+      margin: auto;
+    }
+
+    .card .card-header img {
+      border-top-left-radius: 30px;
+      border-top-right-radius: 30px;
+      width: 400px;
+    }
+
+    .card .card-content {
+      position: relative;
+    }
+
+    .card .card-content img {
+      border-radius: 50%;
+      transform: translateY(-50%);
+      border: 7px solid #fefefe;
+      margin-left: 140px;
+    }
+
+    .card .card-content .city {
+      color: hsl(227, 10%, 46%);
+      font-size: 18px;
+      margin-left: 165px;
+    }
+
+    .card .card-content .name {
+      font-weight: bold;
+      font-size: 24px;
+      color: hsl(229, 23%, 23%);
+      margin-left: 120px;
+    }
+
+    .card .card-content span {
+      color: hsl(227, 10%, 46%);
+      font-weight: normal;
+    }
+
+    .card .card-content .context {
+      position: absolute;
+      bottom: -60px;
+    }
+    
+    .seperator {
+      border: 1px hsl(0, 0%, 59%) solid;
+      position: relative;
+      bottom: -100px;
+    }
+
+    .card .card-footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+
+    .card .card-footer {
+      position: relative;
+      bottom: -100px;
+      height: 100px;
+      width: 400px;
+    }
+
+    .card .card-footer .status {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .card .card-footer .text {
+      color: hsl(227, 10%, 46%);
+        text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="card">
+      <div class="card-header">
+        <img src="images/bg-pattern-card.svg" alt="Card pattern">
+      </div>
+
+      <div class="card-content">
+        <img src="images/image-victor.jpg" alt="Profile icon">
+
+        <div class="context">
+          <p class="name">Victor Crest<span> 26</span></p>
+          <p class="city">London</p>
+        </div>
+      </div>
+
+      <div class="seperator"></div>
+      
+      <div class="card-footer">
+        <div>
+          <p class="status">80K</p>
+          <p class="text">Followers</p>
+        </div>
+
+        <div>
+          <p class="status">803K</p>
+          <p class="text">Likes</p>
+        </div>
+
+        <div>
+          <p class="status">1.4K</p>
+          <p class="text">Photos</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
